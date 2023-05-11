@@ -279,7 +279,7 @@ What we have done with MonopolyDice is created a concrete class that solves our 
 
 ## Follow Along At Home
 
-I am posting all the code in this blog to GitHub so you can experiment with the code yourself.
+I am posting all the code in this blog to [https://github.com/phpfui/ThoughtsBlogCode](https://github.com/phpfui/ThoughtsBlogCode) so you can experiment with the code yourself.
 
 ## Takeaways
 
