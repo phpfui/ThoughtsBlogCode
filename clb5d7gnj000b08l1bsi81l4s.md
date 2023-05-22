@@ -1,4 +1,12 @@
-# Why Use PHP in 2022?
+---
+title: "Why Use PHP in 2023?"
+datePublished: Thu Dec 01 2022 17:42:45 GMT+0000 (Coordinated Universal Time)
+cuid: clb5d7gnj000b08l1bsi81l4s
+slug: why-use-php-in-2023
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1669852539934/SgJHhHp5E.jpg
+tags: php
+
+---
 
 I saw a question on Quora the other day that said something like **"Why use PHP?"**, so I thought I would list the reasons I use PHP and not another super annoying language.
 
