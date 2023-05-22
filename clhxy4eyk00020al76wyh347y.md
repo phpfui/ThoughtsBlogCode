@@ -1,5 +1,5 @@
 ---
-title: "Zen and the art of class design"
+title: "Zen and The Art of Class Design"
 datePublished: Sun May 21 2023 21:44:02 GMT+0000 (Coordinated Universal Time)
 cuid: clhxy4eyk00020al76wyh347y
 slug: zen-and-the-art-of-class-design
