@@ -117,7 +117,7 @@ You should have code standards. I find [PHPStan](https://phpstan.org/) does a go
 
 [PHPCSFixer](https://github.com/PHP-CS-Fixer/PHP-CS-Fixer) is another great tool for formatting code. I run it on git check-in to keep things neat. It has a [great configuration tool here](https://mlocati.github.io/php-cs-fixer-configurator). Highly recommended.
 
-Check any config files from these tools in to the root of your project. This will allow contributors to run the same tests and checks you use.
+Check any config files from these tools into the root of your project. This will allow contributors to run the same tests and checks you use.
 
 ### Have a Good README.MD
 
