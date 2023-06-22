@@ -5,10 +5,10 @@ namespace Tests\Monopoly;
 class ImageDieTest extends \PHPFUI\HTMLUnitTester\Extensions
   {
   public function testImageDieFaces() : void
-    {
-    $page = new \PHPFUI\VanillaPage();
-    $page->setPageName('ImageDie Test');
-    $css = '.face {
+	{
+	$page = new \PHPFUI\VanillaPage();
+	$page->setPageName('ImageDie Test');
+	$css = '.face {
       display: grid;
       grid-template-areas:
           "a . c"
@@ -40,25 +40,25 @@ class ImageDieTest extends \PHPFUI\HTMLUnitTester\Extensions
     .pip:nth-child(6) {grid-area: f;}
     .pip:nth-child(odd):last-child {grid-area: g;}';
 
-    $this->assertNotWarningCss($css);
-    $this->assertValidCss($css);
-    $page->addCSS($css);
-    $faces = [];
-    $imageDie = new \Monopoly\ImageDie();
-    // make sure we have a face for every possible value
-    while (\count($faces) < 6)
-      {
-      $face = (string)$imageDie->getFace();
-      $this->assertValidHtml($face);
-      $faces[$imageDie->value()] = $face;
-      $imageDie->roll();
-      }
-    // add to page and display
-    foreach ($faces as $face)
-      {
-      $page->add($face);
-      }
-    $html = (string)$page;
-    $this->assertValidHtmlPage($html);
-    }
+	$this->assertNotWarningCss($css);
+	$this->assertValidCss($css);
+	$page->addCSS($css);
+	$faces = [];
+	$imageDie = new \Monopoly\ImageDie();
+	// make sure we have a face for every possible value
+	while (\count($faces) < 6)
+	  {
+	  $face = (string)$imageDie->getFace();
+	  $this->assertValidHtml($face);
+	  $faces[$imageDie->value()] = $face;
+	  $imageDie->roll();
+	  }
+	// add to page and display
+	foreach ($faces as $face)
+	  {
+	  $page->add($face);
+	  }
+	$html = (string)$page;
+	$this->assertValidHtmlPage($html);
+	}
   }
