@@ -4,11 +4,11 @@
 
 // allow the autoloader to be included from any script that needs it.
 function autoload(string $className) : void
-  {
-  $path = \str_replace('\\', DIRECTORY_SEPARATOR, __DIR__ . "/../src/{$className}.php");
+	{
+	$path = \str_replace('\\', DIRECTORY_SEPARATOR, __DIR__ . "/../src/{$className}.php");
 
-  @include_once $path;
-  }
+	@include_once $path;
+	}
 
 \spl_autoload_register('autoload');
 
