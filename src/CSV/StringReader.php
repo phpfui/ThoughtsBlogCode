@@ -1,0 +1,28 @@
+<?php
+
+namespace CSV;
+
+/**
+ * A simple CSV reader based on CSV data in a string
+ *
+ * @inheritDoc
+ */
+class StringReader extends \CSV\Reader
+	{
+	public function __construct(private readonly string $data, bool $headerRow = true, string $delimiter = ',')
+		{
+		parent::__construct($headerRow, $delimiter);
+		}
+
+	protected function open() : static
+		{
+		if ($this->stream)
+			{
+			\fclose($this->stream);
+			}
+		$this->stream = \fopen('php://memory', 'r+');
+		\fwrite($this->stream, $this->data);
+
+		return $this;
+		}
+	}
