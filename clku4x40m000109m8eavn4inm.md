@@ -12,7 +12,7 @@ In a [previous post](https://blog.phpfui.com/iterators-and-database-cursors-in-p
 
 ### Three types of Database Cursors
 
-While I want to implement a database cursor on an Active Record class, often database queries will return more information (think JOIN) than an Active Record class (which only models one record from a table) can hold. Since PHP highly leverages associative arrays, it makes sense to model a database cursor returning an associative array, as our CSV reader does. But arrays are kind of limited in what they can do. A more flexible approach would be to return an object, but not a fully typed checked Active Record. This will make the code a bit more generic and extensible. We can also implement ArrayAccess on the DataObject thatthe cursor will return, so now we have something that acts like an array, and has more functionality than a basic array but is not an array.
+While I want to implement a database cursor on an Active Record class, often database queries will return more information (think JOIN) than an Active Record class (which only models one record from a table) can hold. Since PHP highly leverages associative arrays, it makes sense to model a database cursor returning an associative array, as our CSV reader does. But arrays are kind of limited in what they can do. A more flexible approach would be to return an object, but not a fully typed checked Active Record. This will make the code a bit more generic and extensible. We can also implement ArrayAccess on the DataObject that the cursor will return, so now we have something that acts like an array, and has more functionality than a basic array but is not an array.
 
 So our three types of database cursors will be **ArrayCursor**, **DataObjectCursor** and **RecordCursor**.
 
