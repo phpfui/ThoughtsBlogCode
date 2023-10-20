@@ -68,7 +68,7 @@ Free free to add subdirectories to the examples directory, but examples should n
     },
 ```
 
-Make sure you specify your PHP version correctly. You want to specify a minimum version at a minimum. I personally also specify a maximum version, then update packages when a new version of PHP ships. For example, **\&gt;=7.4 &lt;8.2** is very clear as to what versions of PHP the package supports and prevents subtle issues in the new PHP version from affecting production before the package is fully supported. If you are not going to maintain the package, publish a version without limiting the maximum PHP version to be kind to others.
+Make sure you specify your PHP version correctly. You want to specify a minimum version at a minimum. I personally also specify a maximum version, then update packages when a new version of PHP ships. For example, **&gt;=7.4 &lt;8.2** is very clear as to what versions of PHP the package supports and prevents subtle issues in the new PHP version from affecting production before the package is fully supported. If you are not going to maintain the package, publish a version without limiting the maximum PHP version to be kind to others.
 
 ### GitHub actions
 
@@ -117,7 +117,7 @@ You should have code standards. I find [PHPStan](https://phpstan.org/) does a go
 
 [PHPCSFixer](https://github.com/PHP-CS-Fixer/PHP-CS-Fixer) is another great tool for formatting code. I run it on git check-in to keep things neat. It has a [great configuration tool here](https://mlocati.github.io/php-cs-fixer-configurator). Highly recommended.
 
-Check any config files from these tools in to the root of your project. This will allow contributors to run the same tests and checks you use.
+Check any config files from these tools into the root of your project. This will allow contributors to run the same tests and checks you use.
 
 ### Have a Good README.MD
 
@@ -184,3 +184,7 @@ tmp/
 Make sure your .gitignore file is up to date! You should be able to run all tests, code cleanup, linting or other automated tools and not leave unstaged files in git. You should also exclude any files your editor or operating system includes (looking at you .DS\_Store)
 
 Often new versions of dev tools create new cache file names, so check periodically to make sure things are not missed.
+
+**NEXT:** - [PHP 8.2 Release Day](https://blog.phpfui.com/php-82-release-day)
+
+**PREVIOUS: -** [Benchmarking PHP Autoloaders](https://blog.phpfui.com/benchmarking-php-autoloaders)
