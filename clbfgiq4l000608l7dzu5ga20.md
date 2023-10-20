@@ -1,4 +1,12 @@
-# PHP 8.2 Release Day!
+---
+title: "PHP 8.2 Release Day!"
+datePublished: Thu Dec 08 2022 19:13:11 GMT+0000 (Coordinated Universal Time)
+cuid: clbfgiq4l000608l7dzu5ga20
+slug: php-82-release-day
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1670526750027/qL-pZTqWO.jpg
+tags: php, php8
+
+---
 
 PHP 8.2 was officially released today (December 8th, 2022), and that means it is time to upgrade!
 
@@ -84,3 +92,7 @@ Once you have PHP 8.2 in production, you should wait one release cycle to start 
 ### Enjoy PHP 8.2!
 
 And now you are all set to do it again next year. Once you have done the process all the way through, you are ready for the next time!
+
+**NEXT:** - [PHP Object Oriented Programming](https://blog.phpfui.com/php-object-oriented-programming)
+
+**PREVIOUS:** - [Packagist Best Practices](https://blog.phpfui.com/packagist-best-practices)
