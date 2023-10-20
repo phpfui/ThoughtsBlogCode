@@ -207,3 +207,6 @@ public function setQueryCount(int $count) : self
 * Properties that are controlled and depended upon by the current class should be private.
     
 * The fully commented and prettified code can be found [here](https://github.com/phpfui/ORM/blob/main/src/PHPFUI/ORM/BaseCursor.php).
+    
+
+**PREVIOUS:** - [Active Table Design Pattern](https://blog.phpfui.com/active-table-design-pattern)
