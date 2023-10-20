@@ -59,7 +59,7 @@ By requiring a class object of type Publisher we ensure we are not assigning a r
 
 Notice the class is automagically storing the relationship of the publisher. We are providing an object interface to the publisher, and not just a string. This is because a publisher probably has other properties we want to track elsewhere in the database, like how to reorder a book! In this case, we are not storing an integer pointing to the primary key of the publisher table, but rather the publisher object itself. While the setPublisher method makes this clear, in PHP, the class can enforce this itself with magic methods (more on this next time). This makes the class more type-safe since we can't assign a book id to a publisher id and create a database inconsistency.
 
-The more you leverage treating classes as types and hide the implementation details from the user of your class, the more readable and reliable your code becomes. An example of why this is worth doing might be making the data you reveal to users of your website more anonymous. If we were to exposer integer ids for records in a url, like **/member/57292**, we can deduce there are probably 57292 users and that user 57291 also exists. But if we decide to go with a GUID type of primary key, then we can obfuscate this information from the public view and other users. And if we only put classes into our interface, the users of our class won't have to deal with us changing the implementation and having to deal with the fact that we have pushed an implementation detail into their faces.
+The more you leverage treating classes as types and hide the implementation details from the user of your class, the more readable and reliable your code becomes. An example of why this is worth doing might be making the data you reveal to users of your website more anonymous. If we were to expose integer ids for records in a URL, like **/member/57292**, we can deduce there are probably 57292 users and that user 57291 also exists. But if we decide to go with a GUID type of primary key, then we can obfuscate this information from the public view and other users. And if we only put classes into our interface, the users of our class won't have to deal with us changing the implementation and having to deal with the fact that we have pushed an implementation detail into their faces.
 
 ### Use Plural and Singular Correctly
 
@@ -119,3 +119,7 @@ Provide type safety when and where ever possible. Adding a public array to a cla
 Name things correctly. If something has multiple versions, use the plural form of the word, otherwise keep it singular. This helps users understand the class.
 
 Provide useful methods to users of your class.
+
+**NEXT:** - [Zen And The Art Of Class Design](https://blog.phpfui.com/zen-and-the-art-of-class-design)
+
+**PREVIOUS:** - [PHP Inheritance Explained](https://blog.phpfui.com/php-inheritance-explained)
