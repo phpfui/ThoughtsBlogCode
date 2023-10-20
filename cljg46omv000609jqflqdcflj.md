@@ -122,3 +122,7 @@ The primary thing to remember with any OO design is you are modeling an object w
 Another thing to remember with OO design, is you are free to use the object outside of the OO paradigm in other places. You can still do procedural or functional programming and use objects. They are not mutually exclusive.
 
 Next time we can start coding!
+
+**NEXT:** - [PHP Database Cursors](https://blog.phpfui.com/php-database-cursors)
+
+**PREVIOUS:** - [Iterators And Database Cursors In PHP](https://blog.phpfui.com/iterators-and-database-cursors-in-php)
