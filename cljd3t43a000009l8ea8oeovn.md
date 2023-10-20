@@ -257,3 +257,8 @@ There is still more ORM design work to do which I will cover next time. Till the
 * **Think about how things are the same or different**. Hoist common code to the parent class, and implement different things in the child classes.
     
 * **Add functionality** where it makes sense.
+    
+
+**NEXT:** - [Active Table Design Pattern](https://blog.phpfui.com/active-table-design-pattern)
+
+**PREVIOUS:** - [Zen And The Art Of Class Design](https://blog.phpfui.com/zen-and-the-art-of-class-design)
