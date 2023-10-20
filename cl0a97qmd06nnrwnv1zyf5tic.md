@@ -1,4 +1,12 @@
-# Why I Don't Use USE
+---
+title: "Why I Don't Use USE"
+datePublished: Thu Mar 03 2022 00:33:05 GMT+0000 (Coordinated Universal Time)
+cuid: cl0a97qmd06nnrwnv1zyf5tic
+slug: why-i-dont-use-use
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1646267563441/y-xJ6cmt7.jpg
+tags: php
+
+---
 
 One of the most important things for any program to accomplish is to explain itself to the next developer, or even your future self. While a program has to work correctly, its next most important property is to document itself so the future you, or your successor, can figure out what it is doing and why. And since the human brain has to process the code, as well as the machine, it helps to make things as easy as possible for the brain to comprehend. And this means no unneeded levels of indirection.
 
@@ -39,3 +47,7 @@ Another style rule I enforce is always using the FQN even if the class is in the
 FQN are fully grep compatible! I don't know how many times a day I end up grepping things. The beauty of using FQN everywhere is you can easily find where something is used on the entire code base. With a use statement, you only know in which files something is used, but with an FQN, you can see where it was created, or static methods were called on the class. This gets you closer to the actual use of the class. Imaging trying to grep just Client. With grep, the more you specify, the more accurate your results are.
 
 And there are 5 solid reasons not to use USE statements!
+
+**NEXT:** - [Comment Best Practices](https://blog.phpfui.com/comment-best-practices)
+
+**PREVIOUS:** - [PHP Namespace Best Practice](https://blog.phpfui.com/php-namespace-best-practice)
