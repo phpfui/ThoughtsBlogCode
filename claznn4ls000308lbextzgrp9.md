@@ -1,4 +1,12 @@
-# The Costs Of Legacy Support
+---
+title: "The Costs Of Legacy Support"
+datePublished: Sun Nov 27 2022 17:48:15 GMT+0000 (Coordinated Universal Time)
+cuid: claznn4ls000308lbextzgrp9
+slug: the-costs-of-legacy-support
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1651719074381/hg-0-2O-n.png
+tags: php, php-7, php8
+
+---
 
 PHP has been around for a while. 1995 saw the release of version 1. By 1998, version 3 was released. 2000 saw version 4 released with some limited class support. And then a funny thing happened. PHP took over the web! Currently, about 77% of all websites surveyed use PHP, and while that number is very slowly declining, PHP has shown remarkable staying power. And you can see why. PHP does not dictate a programming style. You can use traditional procedural code, more modern object-oriented code, or even functional style programming, or any mix of the three. And PHP is free and fast enough for who it is for.
 
@@ -31,3 +39,7 @@ You should properly document your PHP upgrade strategy so users know what to exp
 ### Be A Leader!
 
 Finally, decide to be a leader and only support modern PHP. As a community contributor, you can help make a difference and move the community forward one package at a time. With 8.2 just around the corner, now is the time to think about upgrading your minimum supported PHP level. I hope I have convinced you to up your game and that of PHP in general.
+
+**NEXT:** - [Your First Open Source Contribution](https://blog.phpfui.com/your-first-open-source-contribution)
+
+**PREVIOUS:** - [Comment Best Practices](https://blog.phpfui.com/comment-best-practices)
