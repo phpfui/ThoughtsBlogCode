@@ -1,4 +1,12 @@
-# Make Exceptions EXCEPTIONAL!
+---
+title: "Make Exceptions EXCEPTIONAL!"
+datePublished: Mon Nov 28 2022 23:15:14 GMT+0000 (Coordinated Universal Time)
+cuid: clb1erhhg000108mo072g5yzr
+slug: make-exceptions-exceptional
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1669669535316/3CuLemPVD.png
+tags: php, exception, exceptions, exceptionhandling
+
+---
 
 PHP, like most modern languages, has exceptions. While exceptions are extremely useful, they are also ripe for abuse.
 
@@ -14,28 +22,28 @@ Programmers are always going to have to deal with exceptions. The world is not p
 
 ### Examples of REAL Exceptions
 
-*   Can't connect to your database. Definitely an issue. Alert the DEV-OPS team and bail!
+* Can't connect to your database. Definitely an issue. Alert the DEV-OPS team and bail!
     
-*   Can't connect to a server that is normally up. Log it and retry or fail gracefully.
+* Can't connect to a server that is normally up. Log it and retry or fail gracefully.
     
-*   Disk error. Another DEV-OPS issue, but you may be able to fail gracefully.
+* Disk error. Another DEV-OPS issue, but you may be able to fail gracefully.
     
-*   Type error. This should not happen, but the developer should know about it. Log it and see if you can fail gracefully.
+* Type error. This should not happen, but the developer should know about it. Log it and see if you can fail gracefully.
     
-*   Run time errors from your language. Log it and see if you can fail gracefully.
+* Run time errors from your language. Log it and see if you can fail gracefully.
     
-*   SQL syntax error. Log it and bail to let the developer know.
+* SQL syntax error. Log it and bail to let the developer know.
     
 
 ### Examples of NON-Exceptions!
 
-*   User enters the wrong password. People make typos. Happens all the time. Not an exception.
+* User enters the wrong password. People make typos. Happens all the time. Not an exception.
     
-*   An API returns a non-200 status code. Hey, the documentation explicitly states other status codes are possible. Not an exception.
+* An API returns a non-200 status code. Hey, the documentation explicitly states other status codes are possible. Not an exception.
     
-*   Database queries that don't return a record. Of course, a particular record may not be in the database. Not normally an exception.
+* Database queries that don't return a record. Of course, a particular record may not be in the database. Not normally an exception.
     
-*   Any input from a user. Users do stupid things. Not an exception.
+* Any input from a user. Users do stupid things. Not an exception.
     
 
 I have seen all of the above examples in production code and in packages from Packagist.org. This is simply laziness of the developer to punt rather than deal with things when they happen. This laziness costs you in multiple ways. Exceptions have overhead in runtime and cognitive load for you and the next developer. The further away from the source of the problem you end up, the harder it is to intelligently deal with the problem.
@@ -55,3 +63,7 @@ One area I absolutely won't tolerate exceptions is user input. User data is ofte
 ### The Simple Exception Rule
 
 Make exceptions exceptional. The rest will flow from this simple rule.
+
+NEXT: - [Keeping A Weed Free Lawn](https://blog.phpfui.com/keeping-a-weed-free-lawn)
+
+**PREVIOUS:** - [Your First Open Source Contribution](https://blog.phpfui.com/your-first-open-source-contribution)
