@@ -1,4 +1,12 @@
-# PHP Error Logging To Slack
+---
+title: "PHP Error Logging To Slack"
+datePublished: Wed Nov 30 2022 20:57:19 GMT+0000 (Coordinated Universal Time)
+cuid: clb44ptgy000108mqfwc8dhhh
+slug: php-error-logging-to-slack
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1669741357172/dszebsO4a.png
+tags: error, php, logging, error-tracking
+
+---
 
 In my last post, I covered why you want a clean error log. But the problem is, what if your error log is not visible to the team? An inaccessible error log is not doing anyone any good. Need to SSH into a server? Too much work. Only available in the office? Not available when you might need it.
 
@@ -27,3 +35,7 @@ Of course, this is a simple, but a usable example. I currently use it with a cro
 How do you know if your code has no errors, or that the error log is down? They both look the same: empty. The answer is you have to have a way to test the error reporting mechanism. I add some superuser-only accessible code where I can execute deliberate errors and see if my error logging pipeline is operational. I will leave PHP error generation to the reader.
 
 And that is how to make a highly available and simple PHP error log. Accessible from everywhere. What you decide to do with it is up to you.
+
+**NEXT:** \- [Why Use PHP In 2023](https://blog.phpfui.com/why-use-php-in-2023)
+
+**PREVIOUS:** - [Keeping A Weed Free Lawn](https://blog.phpfui.com/keeping-a-weed-free-lawn)
