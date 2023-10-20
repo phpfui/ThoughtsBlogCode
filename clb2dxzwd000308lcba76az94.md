@@ -1,4 +1,12 @@
-# Keeping a Weed Free Lawn
+---
+title: "Keeping a Weed Free Lawn"
+datePublished: Tue Nov 29 2022 15:40:05 GMT+0000 (Coordinated Universal Time)
+cuid: clb2dxzwd000308lcba76az94
+slug: keeping-a-weed-free-lawn
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1669682946523/JPwOww1Qh.webp
+tags: error, php, error-tracking
+
+---
 
 PHP is an interpreted language, meaning it is evaluated at runtime and not before during a compilation step. While compiled languages have the ability to mostly self-check the code, interpreted languages like PHP and even JavaScript do this on the fly at runtime. While this is great for quick turnaround times in development, as there is no compile and deploy step, it can haunt you in production.
 
@@ -33,3 +41,7 @@ By not having to mentally sort out which messages might be a problem, you can si
 ### Error Log In Your Pocket
 
 While this is all good, if you don't have vision into the error log at all times, you might miss something. In my [next post](https://blog.phpfui.com/php-error-logging-to-slack), I will show you how to display the error log on your phone. And remember, because you keep a weed free lawn, you won't be seeing much anyway.
+
+**NEXT:** - [PHP Error Logging To Slack](https://blog.phpfui.com/php-error-logging-to-slack)
+
+**PREVIOUS:** - [Make Exceptions EXCEPTIONAL!](https://blog.phpfui.com/make-exceptions-exceptional)
