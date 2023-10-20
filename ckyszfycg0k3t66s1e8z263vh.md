@@ -1,4 +1,12 @@
-# The Genius of PHP's Autoloader
+---
+title: "The Genius Of The PHP Autoloader"
+datePublished: Mon Jan 24 2022 17:47:45 GMT+0000 (Coordinated Universal Time)
+cuid: ckyszfycg0k3t66s1e8z263vh
+slug: the-genius-of-the-php-autoloader
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1643051524327/pWk6eH9Nm.png
+tags: php
+
+---
 
 In my previous post, I talked about [the genius of PHP](https://blog.phpfui.com/the-genius-of-php), but now it is time to talk about the absolutely most genius thing about PHP, the autoloader!
 
@@ -68,26 +76,26 @@ spl_autoload_register(function ($className)
 
 Here is how it works:
 
-1.  When PHP comes across an object or function it does not already know about, and you have registered an autoloader with spl\_autoload\_register, then it passes that unknown name to the function you registered, in this case, an anonymous function.
+1. When PHP comes across an object or function it does not already know about, and you have registered an autoloader with spl\_autoload\_register, then it passes that unknown name to the function you registered, in this case, an anonymous function.
     
-2.  That function then constructs a path to a file that should exist according to the project setup. In this case, it is the directory where the autoloader file lives, plus the full namespace and class name. It also adds '.php', as we know it should be a PHP file.
+2. That function then constructs a path to a file that should exist according to the project setup. In this case, it is the directory where the autoloader file lives, plus the full namespace and class name. It also adds '.php', as we know it should be a PHP file.
     
-3.  If the file exists, then we include it and we are done, as PHP has now included the file, so it will know about it on return of this anonymous function.
+3. If the file exists, then we include it and we are done, as PHP has now included the file, so it will know about it on return of this anonymous function.
     
-4.  If the file does not exist, we don't do anything and just return. PHP will then still not know how to resolve the name and throw an error.
+4. If the file does not exist, we don't do anything and just return. PHP will then still not know how to resolve the name and throw an error.
     
 
 There are a few things you need to know for a successful autoloader:
 
-1.  Make sure the class name and file name are in the same case and spelled the same. On case-insensitive file systems (like Windows or OSX), if the case does not match, it will still work, but when you deploy on Linux, things go south quickly (don't ask how I know that).
+1. Make sure the class name and file name are in the same case and spelled the same. On case-insensitive file systems (like Windows or OSX), if the case does not match, it will still work, but when you deploy on Linux, things go south quickly (don't ask how I know that).
     
-2.  Names will include the full namespace with the \\ character exactly as written in PHP.
+2. Names will include the full namespace with the \\ character exactly as written in PHP.
     
-3.  Make sure your directory structure is set up to match the PHP namespace and case sensitive (see #1.)
+3. Make sure your directory structure is set up to match the PHP namespace and case sensitive (see #1.)
     
-4.  All autoloaded files should begin with &lt;?php and not include any statements not encapsulated in the corresponding class. This prevents unintended code execution.
+4. All autoloaded files should begin with &lt;?php and not include any statements not encapsulated in the corresponding class. This prevents unintended code execution.
     
-5.  Only include one class definition per file. This ensures the autoloader can find it correctly.
+5. Only include one class definition per file. This ensures the autoloader can find it correctly.
     
 
 ### Composer autoload.php file
@@ -103,3 +111,7 @@ For example, C++ could define a standard implementation supplied autoloader inte
 ### The future
 
 The PHP autoloader is a huge part of the genius of PHP and makes coding in PHP much more pleasant. I predict will be a feature added to all languages at some point. Just a question of when everyone realizes computers should work for us, and not we for them.
+
+**NEXT:** \- [PHP Namespace Best Practice](https://blog.phpfui.com/php-namespace-best-practice)
+
+**PREVIOUS:** - [Managing Supply Chain Risk](https://blog.phpfui.com/managing-supply-chain-risk)
