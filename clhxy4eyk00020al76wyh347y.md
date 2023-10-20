@@ -164,3 +164,7 @@ It is important to define requirements and nice to haves so you know which direc
 Look for existing packages before you write from scratch. Many people have been solving similar problems for years. See if you can find something that works for you.
 
 And if you need to write code, spend some time just thinking about it in the back of your mind before you start typing.
+
+**NEXT:** - [Iterators And Database Cursors In PHP](https://blog.phpfui.com/iterators-and-database-cursors-in-php)
+
+**PREVIOUS:** - [Getters And Setters VS Public Access](https://blog.phpfui.com/getters-and-setters-vs-public-access)
