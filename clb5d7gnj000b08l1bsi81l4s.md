@@ -1,4 +1,12 @@
-# Why Use PHP in 2022?
+---
+title: "Why Use PHP in 2023?"
+datePublished: Thu Dec 01 2022 17:42:45 GMT+0000 (Coordinated Universal Time)
+cuid: clb5d7gnj000b08l1bsi81l4s
+slug: why-use-php-in-2023
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1669852539934/SgJHhHp5E.jpg
+tags: php
+
+---
 
 I saw a question on Quora the other day that said something like **"Why use PHP?"**, so I thought I would list the reasons I use PHP and not another super annoying language.
 
@@ -72,6 +80,10 @@ While you can cherry-pick benchmarks, PHP does quite well for any combination an
 
 Since PHP is a scripting language, and you can effectively create PHP on the fly, Reflection classes come in really handy to check out classes and objects at runtime. Reflection classes allow your code to inspect any class or object at run time and pull out the entire class or object definition, including access to protected and private members. I used this functionality to create fully hyperlinked PHP class documentation on the fly for any autoloadable PHP class. Check out [PHPFUI](http://www.phpfui.com) for a live demonstration.
 
-### And Finally, it is just FUN to write in PHP
+### Finally, it is just FUN to write in PHP
 
 And that is the main reason I still write PHP in 2022. Because if it is not fun, why bother?
+
+**NEXT:** - [Benchmarking PHP Autoloaders](https://blog.phpfui.com/benchmarking-php-autoloaders)
+
+**PREVIOUS:** - [PHP Error Logging To Slack](https://blog.phpfui.com/php-error-logging-to-slack)
