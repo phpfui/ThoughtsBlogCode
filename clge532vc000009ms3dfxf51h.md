@@ -37,7 +37,7 @@ So now we have determined the 3 properties of a die:
 
 Now time to implement. The first thing we need to do is figure out what is required in our class for it to work. Requirements of a class should be parameters to the constructor, in other words, an object of a die class must be made with the required fields. In our case, we need to know the number of sides a die has, so this becomes a parameter for our constructor.
 
-The ability to roll is a verb. A verb is an excellent name for a class method. Class methods generally ask the class something (often called getters), or modify a class, which is the case for roll. Methods on objects should mostly be thought as verbs doing or getting something from the object.
+The ability to roll is a verb. A verb is an excellent name for a class method. Class methods generally ask the class something (often called getters), or modify a class, which is the case for roll. Methods on objects should mostly be thought of as verbs doing or getting something from the object.
 
 Plus we need to get the current value of the die.
 
@@ -190,7 +190,7 @@ class Dice implements \Countable
 
 The first thing to notice about this class is that it has no constructor. Why? Because we can initialize the single property with an empty array. PHP constructors are optional if can initialize the object to a valid state with just property initializers. While Dice with no associated die is probably not useful or a valid use case, our class will work with no Die in it, so we don't need a constructor, the object is valid without one.
 
-The real work starts with the add() method. We pass it an ADie object we want to add. We are using the PHP 8.1 feature that allows a default value to be a new object, in this case, a default six-sided ADie. Our user can add as many ADie as they want, and of any type of ADie.
+The real work starts with the add() method. We pass it an ADie object we want to add. We are using the PHP 8.1 feature that allows a default value to be a new object, in this case, a default six-sided ADie. Our users can add as many ADie as they want and of any type of ADie.
 
 We have also implemented the PHP interface Countable, which means we find out the number of ADie objects contained in our Dice object.
 
@@ -299,6 +299,10 @@ I will leave it to the reader to fully understand the tests for the Dice class, 
 
 Fool around with the code and see what happens when you remove the clones from the add() and getDies() methods.
 
+## Follow Along At Home
+
+I am posting all the code in this blog to [https://github.com/phpfui/ThoughtsBlogCode](https://github.com/phpfui/ThoughtsBlogCode) so you can experiment with the code yourself.
+
 ## Takeaways
 
 Here is what I hope readers understand from the above:
@@ -315,3 +319,7 @@ Here is what I hope readers understand from the above:
 ## Next Time
 
 We are going to talk about inheritance in the next installment. We can extend both the ADie and Dice classes to be more specific for specific use cases.
+
+**NEXT:** - [PHP Inheritance Explained](https://blog.phpfui.com/php-inheritance-explained)
+
+**PREVIOUS:** - [PHP 8.2 Release Day](https://blog.phpfui.com/php-82-release-day)
