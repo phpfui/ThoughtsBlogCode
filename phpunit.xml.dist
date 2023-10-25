@@ -7,12 +7,13 @@
   stopOnError="true"
   stopOnFailure="true"
   stopOnWarning="true"
+  displayDetailsOnTestsThatTriggerWarnings="true"
   stopOnDeprecation="true"
   stopOnNotice="true"
   bootstrap="./Tests/bootstrap.php"
   xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.1/phpunit.xsd"
   cacheDirectory=".phpunit.cache"
-	backupStaticProperties="false">
+  backupStaticProperties="false">
   <testsuites>
     <testsuite name="Standard Tests">
       <directory>./Tests/</directory>

@@ -9,9 +9,12 @@ namespace CSV;
  */
 class StreamReader extends \CSV\Reader
 	{
-	public function __construct($stream, bool $headerRow = true, string $delimiter = ',') // @phpstan-ignore-line
+	/**
+	 * @param ?resource $stream
+	 */
+	public function __construct(protected $stream, bool $headerRow = true, string $separator = ',', string $enclosure = '"', string $escape = '\\')
 		{
-		$this->stream = $stream;
-		parent::__construct($headerRow, $delimiter);
+		parent::__construct($stream, $headerRow, $separator, $enclosure, $escape);
+		$this->rewind();
 		}
 	}

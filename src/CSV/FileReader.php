@@ -9,9 +9,9 @@ namespace CSV;
  */
 class FileReader extends \CSV\Reader
 	{
-	public function __construct(private readonly string $fileName, bool $headerRow = true, string $delimiter = ',')
+	public function __construct(private readonly string $fileName, bool $headerRow = true, string $separator = ',', string $enclosure = '"', string $escape = '\\')
 		{
-		parent::__construct($headerRow, $delimiter);
+		parent::__construct(null, $headerRow, $separator, $enclosure, $escape);
 		}
 
 	protected function open() : static

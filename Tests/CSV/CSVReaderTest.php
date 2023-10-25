@@ -4,7 +4,7 @@ namespace Tests\CSV;
 
 use PHPUnit\Framework\Attributes\DataProvider;
 
-class CSVTest extends \PHPUnit\Framework\TestCase
+class CSVReaderTest extends \PHPUnit\Framework\TestCase
 	{
 	private static string $countryFileName = __DIR__ . '/data/countries.csv';
 
@@ -30,9 +30,9 @@ class CSVTest extends \PHPUnit\Framework\TestCase
 		$tab = "\t";
 
 		return [
-			[new \CSV\FileReader(self::$stateFileName, delimiter:$tab)],
-			[new \CSV\StringReader(\file_get_contents(self::$stateFileName), delimiter:$tab)],
-			[new \CSV\StreamReader(\fopen(self::$stateFileName, 'r'), delimiter:$tab)],
+			[new \CSV\FileReader(self::$stateFileName, separator:$tab)],
+			[new \CSV\StringReader(\file_get_contents(self::$stateFileName), separator:$tab)],
+			[new \CSV\StreamReader(\fopen(self::$stateFileName, 'r'), separator:$tab)],
 		];
 		}
 

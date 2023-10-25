@@ -16,6 +16,7 @@ class DieTest extends \PHPUnit\Framework\TestCase
 	$this->assertIsInt($aDie->sides());
 	$this->assertEquals(6, $aDie->sides());
 	$this->assertIsInt($aDie->value());
+
 	// make sure we exercise the roll method
 	for ($i = 0; $i < 1000; ++$i)
 	  {
@@ -32,6 +33,7 @@ class DieTest extends \PHPUnit\Framework\TestCase
 	$this->assertIsInt($aDie->sides());
 	$this->assertEquals($sides, $aDie->sides());
 	$this->assertIsInt($aDie->value());
+
 	// make sure we exercise the roll method
 	for ($i = 0; $i < 1000; ++$i)
 	  {

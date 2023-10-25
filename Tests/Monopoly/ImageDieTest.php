@@ -45,6 +45,7 @@ class ImageDieTest extends \PHPFUI\HTMLUnitTester\Extensions
 	$page->addCSS($css);
 	$faces = [];
 	$imageDie = new \Monopoly\ImageDie();
+
 	// make sure we have a face for every possible value
 	while (\count($faces) < 6)
 	  {
@@ -53,6 +54,7 @@ class ImageDieTest extends \PHPFUI\HTMLUnitTester\Extensions
 	  $faces[$imageDie->value()] = $face;
 	  $imageDie->roll();
 	  }
+
 	// add to page and display
 	foreach ($faces as $face)
 	  {

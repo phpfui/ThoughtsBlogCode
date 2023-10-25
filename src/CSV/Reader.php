@@ -8,7 +8,7 @@ namespace CSV;
  * Emulates an array of records (arrays), implimented as an Iterator, so can be used in a foreach statements.
  *
  * - If your CSV has headers (the default), then the keys of the returned array will be the header values.
- * - You can also specify a different field delimiter, for example ("\t") for tabs.
+ * - You can also specify a different field separator, for example ("\t") for tabs.
  * - Use rewind to reset to the top of the file.
  * - The header record is NEVER returned as a record.  The first iteration will be the first record in the file, excluding the header record if specified.
  * - An empty stream will return -1 as the current index.
@@ -17,8 +17,6 @@ namespace CSV;
  */
 abstract class Reader implements \Iterator
 	{
-	protected $stream = null;	// @phpstan-ignore-line
-
 	/** @var array<string, string> */
 	private array $current = [];
 
@@ -27,7 +25,10 @@ abstract class Reader implements \Iterator
 
 	private int $index = 0;
 
-	public function __construct(private readonly bool $headerRow = true, private readonly string $delimiter = ',')
+	/**
+	 * @param ?resource $stream
+	 */
+	public function __construct(protected $stream, private readonly bool $headerRow, private readonly string $separator, private string $enclosure, private string $escape)
 		{
 		$this->rewind();
 		}
@@ -55,7 +56,7 @@ abstract class Reader implements \Iterator
 
 		if ($this->stream)
 			{
-			$array = \fgetcsv($this->stream, 0, $this->delimiter);
+			$array = \fgetcsv($this->stream, 0, $this->separator, $this->enclosure, $this->escape);
 
 			if ($array)
 				{
@@ -97,7 +98,7 @@ abstract class Reader implements \Iterator
 
 			if ($this->headerRow)
 				{
-				$this->headers = \fgetcsv($this->stream, 0, $this->delimiter);
+				$this->headers = \fgetcsv($this->stream, 0, $this->separator, $this->enclosure, $this->escape);
 				}
 			}
 		$this->next();
