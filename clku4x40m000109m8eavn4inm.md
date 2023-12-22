@@ -48,7 +48,7 @@ We also have some internal housekeeping to keep track of the queries for the cou
 
 Notice the only property where that is not private is $index. This is because it is useful to child classes, while the count and total related properties are private, as the child classes will have nothing to add, as all this information is generic and does not change for the child classes.
 
-### Construct and Destructor
+### Construct and Destruct
 
 ```php
 public function __construct(protected ?\PDOStatement $statement = null, private readonly array $input = [])
