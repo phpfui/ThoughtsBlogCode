@@ -69,3 +69,5 @@ Obviously, **\_\_toString** would be a good match for returning the plain SQL. T
 Objects have provided great value for us in this situation. First, since we can easily nest objects, we have an eloquent solution to the parenthesis problem. We can also save the state of the expression and pull out the text representation and substituted values for use later in the program. We have also enabled some basic static and dynamic type checking.
 
 Another win for OO design!
+
+**PREVIOUS**: - [PHP Database Cursors](https://blog.phpfui.com/php-database-cursors)
