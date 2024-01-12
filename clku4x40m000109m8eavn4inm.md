@@ -210,3 +210,5 @@ public function setQueryCount(int $count) : self
     
 
 **PREVIOUS:** - [Active Table Design Pattern](https://blog.phpfui.com/active-table-design-pattern)
+
+**NEXT**: - [Modeling SQL Conditions in OO PHP](https://blog.phpfui.com/modeling-sql-conditions-in-oo-php)
