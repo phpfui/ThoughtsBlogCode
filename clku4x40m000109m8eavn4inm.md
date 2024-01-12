@@ -209,6 +209,6 @@ public function setQueryCount(int $count) : self
 * The fully commented and prettified code can be found [here](https://github.com/phpfui/ORM/blob/main/src/PHPFUI/ORM/BaseCursor.php).
     
 
-**PREVIOUS:** - [Active Table Design Pattern](https://blog.phpfui.com/active-table-design-pattern)
-
 **NEXT**: - [Modeling SQL Conditions in OO PHP](https://blog.phpfui.com/modeling-sql-conditions-in-oo-php)
+
+**PREVIOUS:** - [Active Table Design Pattern](https://blog.phpfui.com/active-table-design-pattern)
