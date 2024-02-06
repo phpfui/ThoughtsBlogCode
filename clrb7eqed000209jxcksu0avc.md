@@ -70,6 +70,6 @@ Objects have provided great value for us in this situation. First, since we can 
 
 Another win for OO design!
 
-**NEXT:** - Implementing Active Tables in OO PHP
+**NEXT:** - [Implementing Active Tables in OO PHP](https://blog.phpfui.com/implementing-active-tables-in-oo-php)
 
 **PREVIOUS**: - [PHP Database Cursors](https://blog.phpfui.com/php-database-cursors)
