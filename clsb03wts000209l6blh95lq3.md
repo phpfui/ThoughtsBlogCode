@@ -33,7 +33,7 @@ public function getRows() : array;
 
 ### Select What?
 
-What is a Select statement, but simply a list of fields you want to select. By default we can be lazy and use \*. But if we wanted to get more precise, it is easy to add things to select: public function addSelect(string | object $field, string $as = '') :
+What is a Select statement, but simply a list of fields you want to select. By default we can be lazy and use \*. But if we wanted to get more precise, it is easy to add things to select:
 
 ```php
 public function addSelect(string | object $field, string $as = '') : static;
