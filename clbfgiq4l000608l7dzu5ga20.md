@@ -81,7 +81,7 @@ At this point, you should be fairly confident your PHP code is capable of runnin
 
 ### Decide when to go live with PHP 8.2
 
-OK, this is the big hard step most management types hate, upgrading something that "works". I generally watch the PHP updates and see what kind of issues are exclusive to the new PHP version. It generally turns out that most issues in a new release of PHP are in older versions as well. I good rule of thumb is it wait for 2-3 releases before deploying to production.
+OK, this is the big hard step most management types hate, upgrading something that "works". I generally watch the PHP updates and see what kind of issues are exclusive to the new PHP version. It generally turns out that most issues in a new release of PHP are in older versions as well. I good rule of thumb is to wait for 2-3 releases before deploying to production.
 
 If you still get pushback from the higher ups, just remind them that Ford Model Ts still "work" but no one uses them as a daily driver. Upgrading to modern infrastructure is always time well spent. The last thing you want to happen is being 4-5 versions behind when a major security issue is found. Not fun. Upgrading regularly (every year in the case of PHP) is the right approach. Not too many changes at one time, but often enough you don't get left behind.
 
