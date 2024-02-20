@@ -4,7 +4,7 @@ datePublished: Tue Feb 20 2024 00:49:32 GMT+0000 (Coordinated Universal Time)
 cuid: clstnedz3000309i84ova4lj2
 slug: late-static-binding-in-php
 cover: https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/1aYp7IFkHRM/upload/08803ea16ca578891d4187103320feae.jpeg
-tags: php, sql, activerecord, object-oriented-programming
+tags: php, sql, orm, activerecord, object-oriented-programming
 
 ---
 
