@@ -4,7 +4,7 @@ datePublished: Tue Feb 06 2024 23:37:41 GMT+0000 (Coordinated Universal Time)
 cuid: clsb03wts000209l6blh95lq3
 slug: implementing-active-tables-in-oo-php
 cover: https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/ULh0i2txBCY/upload/f7d8cdea396ccae61a11a68431362a5d.jpeg
-tags: oop, php, sql, orm, oops, object-oriented-programming
+tags: oop, php, sql, orm, oops, object-oriented-programming, object-oriented-design
 
 ---
 
@@ -178,5 +178,7 @@ I have just been covering the interface for an Active Table class, but you can f
     
 * Do the easy stuff first. Often you can continue to think about the more complex parts of the problem in the background as you pound out the simple stuff.
     
+
+**NEXT:** - [Late Static Binding In PHP](https://blog.phpfui.com/late-static-binding-in-php)
 
 **PREVIOUS:** - [Modeling SQL Conditions in OO PHP](https://blog.phpfui.com/modeling-sql-conditions-in-oo-php)
