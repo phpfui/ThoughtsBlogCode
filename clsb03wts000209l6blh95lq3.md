@@ -123,7 +123,7 @@ Finally we have the type of join (LEFT, RIGHT, INNER, OUTER, etc) and an AS alia
 
 ### Odds and Ends
 
-One of the things we need to do with SQL statements is have access to functions and other things that might be needed in a condition or select. But how can we distinguish between an SQL field that should be escaped and a function call that should not be escaped. The answer is simple. We default strings to the most common case, which is column names and escape them, then use a **Literal** object to wrap things that are not to be escaped. This puts the burden on the developer to do the right thing, but by default, we escape fields, which will be safer, and assume the developer will do the right think when they use the **Literal** class.
+One of the things we need to do with SQL statements is have access to functions and other things that might be needed in a condition or select. But how can we distinguish between an SQL field that should be escaped and a function call that should not be escaped. The answer is simple. We default strings to the most common case, which is column names and escape them, then use a **Literal** object to wrap things that are not to be escaped. This puts the burden on the developer to do the right thing, but by default, we escape fields, which will be safer, and assume the developer will do the right thing when they use the **Literal** class.
 
 ```php
 class Literal implements \Stringable
