@@ -8,10 +8,6 @@ tags: php, composer, packagist
 
 ---
 
-```plaintext
-    if (! $ride->targetPace)
-```
-
 When creating a package for other PHP developers to use, it helps to follow some basic rules to help the developers you are trying to get to use your package. While there are [other guides](https://www.makeuseof.com/learn-how-to-distribute-your-php-packages-with-packagist/) on how to [publish](https://www.w3resource.com/php/composer/create-publish-and-use-your-first-composer-package.php) a package on packagist.org, I thought I would cover some of the unsaid things that lead to better packages.
 
 ### Don't check in composer.lock
@@ -72,7 +68,7 @@ Feel free to add subdirectories to the examples directory, but examples should n
     },
 ```
 
-Make sure you specify your PHP version correctly. You want to specify a minimum version at a minimum. I personally also specify a maximum version, then update packages when a new version of PHP ships. For example, **\&gt;=7.4 &lt;8.2** is very clear as to what versions of PHP the package supports and prevents subtle issues in the new PHP version from affecting production before the package is fully supported. If you are not going to maintain the package, publish a version without limiting the maximum PHP version to be kind to others.
+Make sure you specify your PHP version correctly. You want to specify a minimum version at a minimum. I personally also specify a maximum version, then update packages when a new version of PHP ships. For example, **&gt;=7.4 &lt;8.2** is very clear as to what versions of PHP the package supports and prevents subtle issues in the new PHP version from affecting production before the package is fully supported. If you are not going to maintain the package, publish a version without limiting the maximum PHP version to be kind to others.
 
 ### GitHub actions
 
