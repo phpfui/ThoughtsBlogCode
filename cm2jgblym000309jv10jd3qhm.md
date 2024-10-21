@@ -140,13 +140,11 @@ First we see if the key exists. If so, we are done and we just return it.
 
 But because it does not exist, it might be a related record if it ends with our idSuffix (which I make user configurable for added flexibility). We simply append the id, then check if that field exists. If it does, then we probably have a related record. First we normalize the name to our record namespace (also user configurable), then see if the class exists. If it does, then it is related record!
 
-Then we can just new the class with the value of our id, since our Record class will construct from an int as a primary key.
-
-That is it, we are done. Of course if the member field or class does not exist, we throw an error.
+Then we can just new the class with the value of our id, since our Record class will construct from an int as a primary key, and then return it. That is it, we are done! Of course if the member field or class does not exist, we throw an error.
 
 ### So What Did We Just Build?
 
-We construct from an array, and now we have an object that validates getting and setting members, works like an array, and also implements related records. It turns out we need all this functionality for our Active Record class. But that is next time.
+We construct from an array, and now we have an object that validates on getting and setting members, works like an array, and also implements related records. It turns out we need all this functionality for our Active Record class. But that is for next time.
 
 ### Takeaways
 
