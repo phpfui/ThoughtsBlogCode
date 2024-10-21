@@ -112,7 +112,7 @@ A related record is just that. This record is related to another record. Just li
 
 In my ORM, I decided to automatically relate any field that ends in ‘Id’. So the **memberId** field would be the related record to the current record with a type of **Member** in the **member** table.
 
-### Implemented Related Records
+### Implementing Related Records
 
 The work is done in the \_\_get magic method:
 
