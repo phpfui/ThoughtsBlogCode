@@ -12,7 +12,7 @@ In my [last article](https://blog.phpfui.com/php-object-oriented-programming), I
 
 ## Monopoly Dice
 
-If we were to model the board game Monopoly, we would certainly want some Dice. Monopoly dice are different from Yahtzee dice and certainly different from Dungons and Dragons dice. So let's model Monopoly dice. We can use our Dice class, but extend it a bit to make it more specific. First, we know we want the standard six-sided die, and second, we need two of them. We also might want to know if the dice have rolled doubles, as that makes a difference in Monopoly. And we want the total value of the two dice to compute how far we need to move.
+If we were to model the board game Monopoly, we would certainly want some Dice. Monopoly dice are different from Yahtzee dice and certainly different from Dungeons and Dragons dice. So let's model Monopoly dice. We can use our Dice class, but extend it a bit to make it more specific. First, we know we want the standard six-sided die, and second, we need two of them. We also might want to know if the dice have rolled doubles, as that makes a difference in Monopoly. And we want the total value of the two dice to compute how far we need to move.
 
 ```php
 namespace Monopoly;
