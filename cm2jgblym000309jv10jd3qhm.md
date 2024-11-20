@@ -158,3 +158,5 @@ We construct from an array, and now we have an object that validates on getting 
     
 
 **PREVIOUS: -** [**Late Static Binding in PHP**](https://blog.phpfui.com/late-static-binding-in-php)
+
+**NEXT:** - [Implementing Active Records in PHP - Part 2](https://blog.phpfui.com/implementing-active-records-in-php-part-2)
