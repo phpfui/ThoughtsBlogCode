@@ -161,4 +161,4 @@ Make child classes deal with an specifics. Virtual fields just defined an interf
 
 Next time we can get into validation, which is a key component of active records.
 
-PREVIOUS: - [Implementing Active Records in PHP - Part 1](https://blog.phpfui.com/implementing-active-records-in-php-part-1)
+**PREVIOUS:** - [Implementing Active Records in PHP - Part 1](https://blog.phpfui.com/implementing-active-records-in-php-part-1)
