@@ -1,12 +1,12 @@
 {
     "require": {
       "phpfui/phpfui": "^6.2",
-      "php": ">=8.1 <8.3"
+      "php": ">=8.1 <=8.4"
     },
     "require-dev": {
         "phpfui/html-unit-tester": "^1.0",
-        "phpunit/phpunit": "^9.1 | ^10.1",
-        "phpstan/phpstan": "^1.10",
+        "phpunit/phpunit": "^10.1 | ^11.0",
+        "phpstan/phpstan": "^2.0",
         "friendsofphp/php-cs-fixer": "^3.16",
         "phpfui/phpunit-syntax-coverage": "^1.0"
     },

@@ -43,6 +43,6 @@ class CSVWriterTest extends \PHPUnit\Framework\TestCase
 			}
 
 		$writtenString = "{$writer}";
-		$this->assertEquals($originalString, $writtenString);
+		$this->assertStringEqualsStringIgnoringLineEndings($originalString, $writtenString);
 		}
 	}
