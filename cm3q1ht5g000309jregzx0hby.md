@@ -157,7 +157,7 @@ You can find the [full source here](https://github.com/phpfui/ORM/blob/main/src/
 
 Always host code out of the current class into a base class when there is nothing specific to the current class. This was the case for `__set()` and all we had to do was add virtual field support, then call the base class method.
 
-Make child classes deal with an specifics. Virtual fields just defined an interface for the class. How that works is up to the virtual field implementation. We can just write to the interface.
+Make child classes deal with any specifics. Virtual fields just defined an interface for the class. How that works is up to the virtual field implementation. We can just write to the interface.
 
 Next time we can get into validation, which is a key component of active records.
 
