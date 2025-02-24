@@ -108,6 +108,6 @@ The **\\PHPFUI\\ORM\\Record** class is the library class that has all the logic 
 * Classes should only contain member properties that are unique to that object and not the class in general.
     
 
-**PREVIOUS:** - [Implementing Active Tables in OO PHP](https://blog.phpfui.com/implementing-active-tables-in-oo-php)
-
 **NEXT: -** [**Implementing Active Records in PHP - Part 1**](https://blog.phpfui.com/implementing-active-records-in-php-part-1)
+
+**PREVIOUS:** - [Implementing Active Tables in OO PHP](https://blog.phpfui.com/implementing-active-tables-in-oo-php)
