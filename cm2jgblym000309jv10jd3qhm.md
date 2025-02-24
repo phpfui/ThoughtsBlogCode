@@ -157,6 +157,6 @@ We construct from an array, and now we have an object that validates on getting 
 * Implement useful interfaces such as ArrayAccess if it makes sense.
     
 
-**PREVIOUS: -** [**Late Static Binding in PHP**](https://blog.phpfui.com/late-static-binding-in-php)
-
 **NEXT:** - [Implementing Active Records in PHP - Part 2](https://blog.phpfui.com/implementing-active-records-in-php-part-2)
+
+**PREVIOUS: -** [**Late Static Binding in PHP**](https://blog.phpfui.com/late-static-binding-in-php)
