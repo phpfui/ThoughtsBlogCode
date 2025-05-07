@@ -32,7 +32,7 @@ public function __get(string $field) : mixed
 	}
 ```
 
-A specific Record class can set up a virtual field by adding an array indexed by the virtual field name. We check to see if the field being accessed is a virtual field, and if it is an array. Then we take the first element in the array and create an object from it. We pass the current active Record (&this) and the field name it was called with.
+A specific Record class can set up a virtual field by adding an array indexed by the virtual field name. We check to see if the field being accessed is a virtual field, and if it is an array. Then we take the first element in the array and create an object from it. We pass the current active Record ($this) and the field name it was called with.
 
 We then call `getValue()` and pass it the rest of the array. Any class that derives from `\PHPFUI\ORM\VirtualField` be used. All you need to do is figure out what needs to be returned by `getValue()`. And `setValue()` works exactly the same way, but called by `__set()` instead.
 
