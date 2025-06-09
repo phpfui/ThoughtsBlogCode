@@ -161,4 +161,6 @@ Make child classes deal with any specifics. Virtual fields just defined an inter
 
 Next time we can get into validation, which is a key component of active records.
 
+**NEXT: -** [**ORM Record Validation in PHP**](https://blog.phpfui.com/orm-record-validation-in-php)
+
 **PREVIOUS:** - [Implementing Active Records in PHP - Part 1](https://blog.phpfui.com/implementing-active-records-in-php-part-1)
