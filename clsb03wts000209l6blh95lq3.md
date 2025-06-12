@@ -39,7 +39,7 @@ What is a Select statement, but simply a list of fields you want to select. By d
 public function addSelect(string | object $field, string $as = '') : static;
 ```
 
-If the $field is string, we can simply escape it. If it is an object, we can take the string representative of the object and use that (more on this later). And the $as parameter is rather obvious. We can call addSelect() multiple times to add multiple fields. All fairly simple.
+If the $field is string, we can simply escape it. If it is an object, we can take the string representation of the object and use that (more on this later). And the $as parameter is rather obvious. We can call addSelect() multiple times to add multiple fields. All fairly simple.
 
 ### Where Art Thou
 
