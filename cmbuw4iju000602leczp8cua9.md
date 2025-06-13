@@ -4,6 +4,7 @@ datePublished: Fri Jun 13 2025 14:15:59 GMT+0000 (Coordinated Universal Time)
 cuid: cmbuw4iju000602leczp8cua9
 slug: php-orm-wrapup-and-benchmarks
 cover: https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/ZRbZq5Se3Os/upload/e65c8f9e9b9b46a3886bcec47f1f5784.jpeg
+tags: php, sql, benchmark, orm, benchmarking
 
 ---
 
