@@ -162,4 +162,6 @@ Use inheritance to make something more specific. In this case, we wanted a more 
 
 Leave classes open for inheritance if there is something that you don’t want to implement, but someone else may.
 
+**NEXT: -** [**ORM Record Validation in PHP**](https://blog.phpfui.com/php-orm-wrapup-and-benchmarks)
+
 **PREVIOUS: -** [**Implementing Active Records in PHP - Part 2**](https://blog.phpfui.com/implementing-active-records-in-php-part-2)
