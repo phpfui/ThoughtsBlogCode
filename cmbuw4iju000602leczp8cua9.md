@@ -237,4 +237,6 @@ php benchmark.php 1
 php benchmark.php 2
 ```
 
+**NEXT: -** [**Types Matter!**](https://blog.phpfui.com/types-matter)
+
 **PREVIOUS: -** [**ORM Record Validation in PHP**](https://blog.phpfui.com/orm-record-validation-in-php)
