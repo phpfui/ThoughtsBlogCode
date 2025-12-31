@@ -12,7 +12,7 @@ Active Records are a defined [Design Pattern](https://en.wikipedia.org/wiki/Soft
 
 ### Lets Get to Work!
 
-An Active Record class has to do some basic things, like validate that a field exists and allow set and get for valid members. This sounds like a base class to me. Let’s see how we might hoist some functionality into a useful object. We need a name, so I decided on **DataObject**. Object was my first choice, but it is a reserved word in PHP, so DataObject makes sense, because this class is basically just the data from a query without much other logic.
+An Active Record class has to do some basic things, like validate that a field exists and allow set and get for valid members. This sounds like a base class to me. Let’s see how we might hoist some functionality into a useful object. We need a name, so I decided on **DataObject**. Object was my first choice, but it is a reserved word in PHP, so **DataObject** makes sense, because this class is basically just the data from a query without much other logic.
 
 First, the constructor. We would want to create an object from an array, as arrays are returned natively from the PDO interface.
 
