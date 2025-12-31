@@ -8,9 +8,9 @@ tags: oop, design-patterns, php, orm, oops
 
 ---
 
-In our last episode, I wrote a class I call DataObject. It will be the base class for my Active Record class since it has the basics of what is required in an Active Record class.
+In our last episode, I wrote a class I call **DataObject**. It will be the base class for my Active Record class since it has the basics of what is required in an Active Record class.
 
-A DataObject is basically a OO wrapper around an array, but an Active Record needs to do more, like get, set and validate fields, implement relations, and of course do the basic CRUD functions. Obviously we are going to implement `__get` and`__set` magic functions, but how do we know what to get and set?
+A **DataObject** is basically a OO wrapper around an array, but an Active Record needs to do more, like get, set and validate fields, implement relations, and of course do the basic CRUD functions. Obviously we are going to implement `__get` and`__set` magic functions, but how do we know what to get and set?
 
 The answer is Late Static Binding and our intermediate class containing all the field information from the SQL table. I keep track of the field name (the index into the array that describes the table), and then the properties of that field, including its type, nullable and default values. So if a field is not an index in this table, it is not a valid field. I can also report on type and null errors and provide a valid default record.
 
