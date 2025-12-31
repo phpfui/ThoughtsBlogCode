@@ -91,7 +91,7 @@ class FileReader extends \CSV\Reader
 	}
 ```
 
-Notice the constructor takes a required file name. This makes sense since we can't read a CSV file if we don't know what the file name is. We also have two default parameters that users of our class may be interested in. The $headers boolean defaults to true and indicated the CSV file has a header row naming the columns. Most CSV files follow this format since unnamed columns tend to be confusing to people you might need to read your file. The last parameter is the delimiter character. Since CSV files are normally delimited by commas, this is the default. But some files might use another character such as a tab, this allows the user to specify an alternate field delimiter.
+Notice the constructor takes a required file name. This makes sense since we can't read a CSV file if we don't know what the file name is. We also have two default parameters that users of our class may be interested in. The $headers boolean defaults to true and indicated the CSV file has a header row naming the columns. Most CSV files follow this format since unnamed columns tend to be confusing to people who might need to read your file. The last parameter is the delimiter character. Since CSV files are normally delimited by commas, this is the default. But some files might use another character such as a tab, this allows the user to specify an alternate field delimiter.
 
 The other method is **open()** which understandably opens the file for reading since that is what we want to do with the file. Notice open() is not in the Iterator interface. This is an addition to our class that we need for it to function correctly.
 
