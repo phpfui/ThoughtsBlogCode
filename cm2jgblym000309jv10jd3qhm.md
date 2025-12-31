@@ -12,12 +12,14 @@ Active Records are a defined [Design Pattern](https://en.wikipedia.org/wiki/Soft
 
 ### Lets Get to Work!
 
-An Active Record class has to do some basic things, like validate that a field exists and allow set and get for valid members. This sounds like a base class to me. Let’s see how we might hoist some functionality into a useful object.
+An Active Record class has to do some basic things, like validate that a field exists and allow set and get for valid members. This sounds like a base class to me. Let’s see how we might hoist some functionality into a useful object. We need a name, so I decided on **DataObject**. Object was my first choice, but it is a reserved word in PHP, so DataObject makes sense, because this class is basically just the data from a query without much other logic.
 
 First, the constructor. We would want to create an object from an array, as arrays are returned natively from the PDO interface.
 
 ```php
-	public function __construct(protected array $current) {}
+class DataObject implements \ArrayAccess
+    {
+    public function __construct(protected array $current) {}
 ```
 
 We have now defined how to create an object with a property of $current. And since we have constructed from an array, it would be nice to support array syntax on our new object.
@@ -144,7 +146,7 @@ Then we can just new the class with the value of our id, since our Record class 
 
 ### So What Did We Just Build?
 
-We construct from an array, and now we have an object that validates on getting and setting members, works like an array, and also implements related records. It turns out we need all this functionality for our Active Record class. But that is for next time.
+We built a basic class (**DataObject**) that converts an array into an object with object semantics, ie. **$object→property** in addition to **$object\[‘property’\]** syntax of an array. Since it constructs from an array, now we have an object that validates on getting and setting members (which arrays do not), works like an array, and also implements related records. It turns out we need all this functionality for our Active Record class. But that is for next time.
 
 ### Takeaways
 
