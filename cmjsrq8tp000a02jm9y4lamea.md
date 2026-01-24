@@ -16,7 +16,7 @@ PHP added class types to parameters in 5.0, then scalar parameter types in PHP 7
 
 ### But Why Bother With Types?
 
-This is a common question from those developers who have never used a strictly typed language. In my experience, if you were introduced to strict types when learning computer languages, you will always be a strict type developer, but if you learned programming in with out strict typing, it takes lots of hard learned lessons in failure to finally understand types. The bottom line is types help you create verifiably valid programs with fewer surprises and gives you a higher degree of confidence in your code to work correctly.
+This is a common question from those developers who have never used a strictly typed language. In my experience, if you were introduced to strict types when learning computer languages, you will always be a strict type developer, but if you learned programming with out strict typing, it takes lots of hard learned lessons in failure to finally understand types. The bottom line is types help you create verifiably valid programs with fewer surprises and gives you a higher degree of confidence in your code to work correctly.
 
 But first you need to understand what types are, and then it will become more apparent how types help you and are not a hindrance to better code.
 
@@ -35,7 +35,7 @@ $d = 1.0;
 echo $d;
 ```
 
-The output of the above is `1111`, but variable has a different underlying representation, they just look the same when output.
+The output of the above is `1111`, but each variable has a different underlying representation, they just look the same when output.
 
 ### Implicit Conversions
 
